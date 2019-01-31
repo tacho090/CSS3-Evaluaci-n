@@ -1,29 +1,24 @@
+body{
+  background-color: #02010a;
+}
+
 @font-face {
     font-family:DS;
     src:url(../font/DancingScript-Regular.ttf);
 }
 
-/*#cabecera{
-  flex-wrap: wrap;
-
-}*/
-
-
 .cabecera{
-  width:100%;
+  width:auto;
   background-color: #5b7989;
   border-radius: 15px;
-  padding:10px;
+  padding:20px;
+  font-family: DS;
+  color:white;
 }
 
 .cabecera h1{
-  font-family: DS;
-  color: white;
   filter:drop-shadow(2px);
-  /*height: 150px;*/
-
   text-align: left;
-
   display:inline;
   /*width:100%;*/
   /*order: 1;*/
@@ -31,59 +26,32 @@
 
 .cabecera ul{
   list-style-type:none;
+  float:right;
   margin:0;
-  padding:0;
-  top: 0;
+  padding:1.5%;
+  top:0;
 }
 
 .cabecera li{
+
   display:inline;
 
 }
 
 .cabecera li a{
-  display:block;
   color:white;
-  text-align:right;
-  float:right;
-  padding:8px;
-  /*width:60px;*/
+  padding: 8px;
+  /*border-style: dotted;
+  border-width: 2px black;*/
 }
 
 
 .cabecera p{
-  font-family: DS;
   display:inline;
   color:white;
   float:right;
 }
 
-body{
-  background-color: #02010a;
-}
-
-ul{
-    list-style-type: none;
-    margin:0;
-    overflow:hidden;
-    /*height:100%;*/
-}
-
-#cabecera ul li{
-  float:right;
-  /*display:block;*/
-  margin: 0px 5px;
-  padding: 15px 0px;
-  height:100%;
-}
-
-.menu-principal{
-  background-color: #5b7989;
-  float:right;
-  color: white;
-  font-family: Arial;
-  display:inline;
-}
 
 #img-central{
   display:block;
