@@ -167,6 +167,40 @@ body{
   width:20px;
 }
 
+/**********Paisajes y Retratos***********/
+
+.flex-container{
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display:flex;
+  background-color: #d5c75f;
+  flex-wrap:wrap;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 30.0%;
+  margin: 1.6%;
+  padding: 0px;
+  font-size: 30px;
+}
+.flex-container > div > img {
+  display:block;
+  width:100%;
+  left:0px;
+  margin:0px;
+  /*padding: 10px;*/
+  overflow: auto;
+}
+
+.img1{
+  filter:blur(5px);
+}
+.img2{
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+/*****************************/
 @media (min-width: 900px){
   /*For Desktop*/
   #contenido{
