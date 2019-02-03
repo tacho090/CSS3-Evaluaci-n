@@ -10,7 +10,7 @@ body{
 .cabecera{
   width:95.5%;
   background-color: #5b7989;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
   padding:20px;
   font-family: DS;
   color:white;
@@ -82,6 +82,11 @@ body{
   padding-bottom:50px;
 }
 
+figcaption{
+  text-align: center;
+  font-family:DS;
+}
+
 #img-izquierda{
   display:block;
   width:50%;
@@ -98,10 +103,10 @@ body{
   width:85%;
   margin-left:auto;
   margin-right:auto;
-  padding-top:10px;
+  /*padding-top:10px;
   padding-bottom:10px;
   padding-right:10px;
-  padding-left:20px;
+  padding-left:20px;*/
   filter:drop-shadow(2px 2px 4px #02010a);
 }
 
@@ -122,13 +127,13 @@ body{
 }
 
 #img-derecha img{
-  width:100%;
+  width:85%;
   margin-left:auto;
   margin-right:auto;
-  padding-top:10px;
+  /*padding-top:10px;
   padding-bottom:10px;
   padding-right:10px;
-  padding-left:20px;
+  padding-left:20px;*/
   filter:drop-shadow(2px 2px 4px #02010a);
 }
 /*img{
@@ -147,7 +152,7 @@ body{
 .footer-row{
   width:auto;
   background-color: #C6d5c5;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   padding:20px;
   font-family: DS;
   color:black;
@@ -207,11 +212,8 @@ body{
 
 /*****Animation-slide*******/
 #slide{
-  animation: slide;
-  animation-duration:2s;
-  animation-delay: 0.5s;
-  /*position: absolute;*/
-
+  animation-name: slide;
+  animation-duration:1s;
 }
 @-webkit-keyframes slide{
   0%{
@@ -249,12 +251,25 @@ body{
 @media screen and (max-width:899px){
   /*For mobile*/
 
-  header{
-    display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
+
+
+  .cabecera{
+    margin: auto;
+    text-align: center;
+    height:75px;
+    /*width:100%;*/
+    /*order: 1;*/
+  }
+
+  .cabecera ul{
+    /*float:center;*/
+    display:block;
+    margin-top:5px;
+    margin-left:25%;
+    margin-right:25%;
+    padding:1.5%;
+    top:0;
+
   }
 
   #yellowbox{
@@ -266,19 +281,15 @@ body{
   }
   #img-derecha {
     display: block;
-    width: 83%;
-    left: 0px;
-    margin-left: 3%;
+    width: 85%;
     padding: 10px;
     overflow: auto;
   }
   #img-izquierda {
     display: block;
     width: 100%;
-    float: left;
-    margin: auto;
-    right: 10px;
-    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
     overflow: auto;
   }
   #contenido{
@@ -292,7 +303,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: #C6d5c5;
-    height: 1400px;
+    height: 1000px;
   }
 
   .footer-row > div{
@@ -300,7 +311,7 @@ body{
     flex-direction:column;
     margin: 1.6%;
     padding: 0px;
-    font-size: 30px;
+    font-size: 20px;
   }
   /*Paisajes y retratos*/
 
