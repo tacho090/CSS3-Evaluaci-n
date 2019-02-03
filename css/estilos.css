@@ -20,8 +20,6 @@ body{
   filter:drop-shadow(2px 2px 4px #02010a);
   text-align: left;
   display:inline;
-  /*width:100%;*/
-  /*order: 1;*/
 }
 
 .cabecera ul{
@@ -33,16 +31,12 @@ body{
 }
 
 .cabecera li{
-
   display:inline;
-
 }
 
 .cabecera li a{
   color:white;
   padding: 8px;
-  /*border-style: dotted;
-  border-width: 2px black;*/
 }
 
 
@@ -103,10 +97,6 @@ figcaption{
   width:85%;
   margin-left:auto;
   margin-right:auto;
-  /*padding-top:10px;
-  padding-bottom:10px;
-  padding-right:10px;
-  padding-left:20px;*/
   filter:drop-shadow(2px 2px 4px #02010a);
 }
 
@@ -115,7 +105,6 @@ figcaption{
   width:50%;
   left:0px;
   margin:auto;
-  /*padding: 10px;*/
   overflow: auto;
 }
 
@@ -130,24 +119,12 @@ figcaption{
   width:85%;
   margin-left:auto;
   margin-right:auto;
-  /*padding-top:10px;
-  padding-bottom:10px;
-  padding-right:10px;
-  padding-left:20px;*/
   filter:drop-shadow(2px 2px 4px #02010a);
 }
-/*img{
-  width:100%;
-}*/
+
 .imagen-central{
   width:50px;
 }
-
-/*footer{
-  clear:both;
-  border-radius:10px;
-  background-color:#C6d5c5;
-}*/
 
 .footer-row{
   width:auto;
@@ -191,7 +168,6 @@ figcaption{
   width:100%;
   left:0px;
   margin:0px;
-  /*padding: 10px;*/
   overflow: auto;
 }
 
@@ -239,32 +215,28 @@ figcaption{
 }
 
 
-/*****************************/
+/************For Desktop***********/
 @media screen and (min-width: 900px){
-  /*For Desktop*/
+
   #contenido{
     width:900px;
     margin: auto;
   }
 
 }
+
+/************For mobile***********/
+
 @media screen and (max-width:899px){
-  /*For mobile*/
-
-
 
   .cabecera{
     margin: auto;
     text-align: center;
     height:75px;
-    /*width:100%;*/
-    /*order: 1;*/
   }
 
   .cabecera ul{
-    /*float:center;*/
-    list-style-type: none;
-    margin-left: 21%;
+    margin-right: 40%;
     padding: 1.5%;
     top: 0;
   }
@@ -278,22 +250,32 @@ figcaption{
   }
   #img-derecha {
     display: block;
-    justify-content:center;
+    margin: auto;
     width: 85%;
     padding: 10px;
     overflow: auto;
+
   }
+
+  #img-derecha img{
+    margin-left: 10%;
+  }
+
   #img-izquierda {
     display:flex;
-    justify-content:center;
     width: 100%;
     overflow: auto;
   }
+
+  #img-izquierda img{
+    margin-left: 10%;
+  }
+
   #contenido{
     width:100%;
   }
 
-  /*Footer*/
+/************Footer***********/
   .footer-row{
     display: -webkit-flex; /* Safari */
     -webkit-flex-wrap: wrap; /* Safari 6.1+ */
@@ -310,7 +292,8 @@ figcaption{
     padding: 0px;
     font-size: 20px;
   }
-  /*Paisajes y retratos*/
+
+  /************Paisaje y retrato mobile***********/
 
   .flex-container{
     display: -webkit-flex; /* Safari */
@@ -332,7 +315,6 @@ figcaption{
     width:100%;
     left:0px;
     margin:0px;
-    /*padding: 10px;*/
     overflow: auto;
   }
 }
